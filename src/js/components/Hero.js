@@ -165,7 +165,6 @@ const Hero = (props) => {
               
             />
 
-            
           </div>
 
           <div className="hero-minter">
