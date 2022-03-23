@@ -21,54 +21,54 @@ import img16 from "../assets/fatApe16.jpg";
 import img17 from "../assets/fatApe17.jpg";
 import img18 from "../assets/fatApe18.jpg";
 
-const path = {
-  curviness: 0,
-  autoRotate: false,
-  values: [{ x: (window.innerWidth / 100) * 80, y: 0 }],
-};
+// const path = {
+//   curviness: 0,
+//   autoRotate: false,
+//   values: [{ x: (window.innerWidth / 100) * 80, y: 0 }],
+// };
 
-const path2 = {
-  curviness: 0,
-  autoRotate: false,
-  values: [{ x: (-window.innerWidth / 100) * 80, y: 0 }],
-};
+// const path2 = {
+//   curviness: 0,
+//   autoRotate: false,
+//   values: [{ x: (-window.innerWidth / 100) * 80, y: 0 }],
+// };
 
 export default function Gallery() {
-  useEffect(() => {
-    const tween = new TimelineLite();
-    const tween2 = new TimelineLite();
-    tween.add(
-      TweenLite.to("#gallery-row1", 1, {
-        bezier: path,
-        ease: Power1.easeInOut,
-      })
-    );
-    tween2.add(
-      TweenLite.to("#gallery-row2", 1, {
-        bezier: path2,
-        ease: Power1.easeInOut,
-      })
-    );
-    const controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      triggerElement: "#gallery",
-      duration: 1500,
-      triggerHook: 1,
-    })
-      .setTween(tween)
-      // .addIndicators()
-      .addTo(controller);
+  // useEffect(() => {
+  //   const tween = new TimelineLite();
+  //   const tween2 = new TimelineLite();
+  //   tween.add(
+  //     TweenLite.to("#gallery-row1", 1, {
+  //       bezier: path,
+  //       ease: Power1.easeInOut,
+  //     })
+  //   );
+  //   tween2.add(
+  //     TweenLite.to("#gallery-row2", 1, {
+  //       bezier: path2,
+  //       ease: Power1.easeInOut,
+  //     })
+  //   );
+  //   const controller = new ScrollMagic.Controller();
+  //   new ScrollMagic.Scene({
+  //     triggerElement: "#gallery",
+  //     duration: 1500,
+  //     triggerHook: 1,
+  //   })
+  //     .setTween(tween)
+  //     // .addIndicators()
+  //     .addTo(controller);
 
-    const controller2 = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-      triggerElement: "#gallery",
-      duration: 1500,
-      triggerHook: 1,
-    })
-      .setTween(tween2)
-      // .addIndicators()
-      .addTo(controller2);
-  }, []);
+  //   const controller2 = new ScrollMagic.Controller();
+  //   new ScrollMagic.Scene({
+  //     triggerElement: "#gallery",
+  //     duration: 1500,
+  //     triggerHook: 1,
+  //   })
+  //     .setTween(tween2)
+  //     // .addIndicators()
+  //     .addTo(controller2);
+  // }, []);
 
   return (
     <Container
