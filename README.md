@@ -1,3 +1,13 @@
+
+# FatApe Club Clone
+I built this project for a client through Fiverr. He wanted to have his own NFT Collection and needed a web app similar to fatapeclub.io and asked me to clone it for him and his team.
+I used React, State, GSAP, Bootstrap for this project
+
+# Preview
+
+![fatapeclubio](https://user-images.githubusercontent.com/84421088/174652547-d80e2daf-462f-4608-90a9-4fa23ddb81a4.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
